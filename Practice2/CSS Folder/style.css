@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: auto;
+}
+
+/* ----------------------------------------------------------- */
+/*  Left Bar Started  */
+
+.grid-container .grid-item-left {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15vh 60vh 25vh;
+    background: firebrick;
+    color: white;
+}
+.grid-container .grid-item-left .item {
+    padding: 5px;
+}
+.grid-container .grid-item-left .text1 {
+    width: 100%;
+    font-size: 27px;
+}
+.grid-container .grid-item-left .text1 span {
+    font-size: 22px;
+}
+.grid-container .grid-item-left .text1 img {
+    margin-left: 15px;
+    width: 70px;
+    height: 50px;
+}
+.grid-container .grid-item-left .text2 {
+    width: 100%;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 100px;
+    font-family: Batang, serif;
+}
+.grid-container .grid-item-left .text3 {
+    width: 100%;
+    font-size: 16px;
+    padding-right: 250px;
+    padding-left: 100px;
+}
+
+
+/*  Left Bar The End  */
+/* ----------------------------------------------------------------------- */
+
+.grid-container .grid-item-right {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vh 15vh 50vh 25vh;
+    padding-right: 130px;
+    /* color: white; */
+}
+.grid-container .grid-item-right .context {
+    font-size: 24px;
+    text-align: right;
+    padding: 12px;
+}
+.grid-container .grid-item-right .context span {
+    display: inline-block;
+    margin: 15px;
+}
+.grid-item-right .context span a {
+    text-decoration: none;
+    color: black;
+}
+.grid-container .grid-item-right .signUp {
+    padding: 12px;
+    
+} 
+.grid-container .grid-item-right .signUp h1 {
+    font-size: 48px;
+}
+.grid-container .grid-item-right .signUp p {
+    font-size: 20px;
+}
+.grid-container .grid-item-right .contact {
+    padding: 25px;
+}
+.grid-container .grid-item-right .contact .fluid {
+    width: 100%;
+    position: relative;
+    height: 35px;
+    margin-top: 15px;
+}
+.grid-item-right .contact .fluid input {
+    border: 1px solid #ccc;
+    padding: 0.3em;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.grid-item-right .contact .yellow input {
+    background: yellow;
+}
+.grid-item-right .contact .fluid a {
+    text-decoration: none;
+}
+
+.grid-container .grid-item-right .btns .btnBlock {
+    width: 100%;
+    position: relative;
+    height: 50%;
+    padding: 20px;
+}
+.grid-item-right .btns .btnBlock button {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    background: var(--clr);
+    border: 1px solid var(--clr2);
+}
+.grid-item-right .btns .btnBlock button:hover {
+    cursor: pointer;
+}
+.btns .btnBlock button img {
+    position: absolute;
+    top: 1px;
+    left: 
+    calc(
+        35% - 50px
+    )
+    ;
+    width: 30px;
+    height: 30px;
+}
